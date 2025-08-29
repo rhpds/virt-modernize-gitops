@@ -17,4 +17,4 @@ spec:
         number: 80
         protocol: HTTP
   selector:
-    istio: ingressgateway"|oc -n istio-system apply -f -
+    istio: ingressgateway
