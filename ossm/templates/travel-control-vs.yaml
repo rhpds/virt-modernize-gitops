@@ -6,7 +6,7 @@ metadata:
   labels:
     module: m5
   annotations:
-    argocd.argoproj.io/sync-wave: "3"        
+    argocd.argoproj.io/sync-wave: "3"
 spec:
   hosts:
     - "istio-ingressgateway-istio-system.{{ .Values.domain }}"
