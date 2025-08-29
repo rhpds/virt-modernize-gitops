@@ -11,7 +11,7 @@ metadata:
 spec:
   servers:
     - hosts:
-        - $ISTIO_INGRESS_ROUTE_URL
+        - "istio-ingressgateway-istio-system.{{ .Values.domain }}"
       port:
         name: http
         number: 80
