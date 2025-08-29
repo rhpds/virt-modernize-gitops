@@ -14,6 +14,7 @@ spec:
     metadata:
       annotations:
         readiness.status.sidecar.istio.io/applicationPorts: ""
+        sidecar.istio.io/inject: 'true'
       labels:
         app: viaggi
         version: v1
