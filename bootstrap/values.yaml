@@ -28,3 +28,8 @@ portal:
   path: travel-portal
   values:
     myKey: myValue
+
+control:
+  path: travel-control
+  values:
+    myKey: myValue
