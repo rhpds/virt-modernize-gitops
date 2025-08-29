@@ -9,7 +9,7 @@ metadata:
     argocd.argoproj.io/sync-wave: "3"        
 spec:
   hosts:
-    - {{ .Values.ossm_ingress }}
+    - "istio-ingressgateway-istio-system.{{ .Values.deployer.domain }}"
   gateways:
     - istio-system/control-gateway
   http:
