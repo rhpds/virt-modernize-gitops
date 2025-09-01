@@ -1,5 +1,5 @@
 ---
-apiVersion: networking.istio.io/v1beta1
+apiVersion: networking.istio.io/v1alpha3
 kind: Gateway
 metadata:
   name: control-gateway
@@ -8,6 +8,7 @@ metadata:
     module: m3
   annotations:
     argocd.argoproj.io/sync-wave: "3"
+    argocd.argoproj.io/sync-options: SkipDryRunOnMissingResource=true
 spec:
   servers:
     - hosts:
