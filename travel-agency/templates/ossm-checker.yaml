@@ -48,7 +48,7 @@ data:
             api_version: maistra.io/v2
             kind: ServiceMeshControlPlane
             name: "basic"
-            namespace: "travel-agency"
+            namespace: "istio-system"
           register: r_smcp
           retries: "30"
           delay: "5"
