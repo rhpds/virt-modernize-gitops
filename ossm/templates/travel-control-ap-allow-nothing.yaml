@@ -4,7 +4,8 @@ metadata:
   name: allow-nothing
   namespace: travel-control
   labels:
-    module: m5    
+    module: m5
   annotations:
     argocd.argoproj.io/sync-wave: "3"
+    argocd.argoproj.io/sync-options: SkipDryRunOnMissingResource=true
 spec: {}
