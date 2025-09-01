@@ -69,7 +69,7 @@ metadata:
   namespace: travel-agency
   annotations:
     argocd.argoproj.io/hook: PreSync
-    argocd.argoproj.io/hook-delete-policy: HookSucceeded
+    argocd.argoproj.io/hook-delete-policy: Never
     argocd.argoproj.io/sync-wave: "0"
 spec:
   backoffLimit: 2
